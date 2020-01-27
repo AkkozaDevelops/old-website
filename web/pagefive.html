@@ -1,19 +1,22 @@
 <html>
-<script>
-  fetch('https://raw.githubusercontent.com/dwyl/english-words/master/words.txt').then(response=> response.text()).then(text=>{
+  <body>
+  <h3 id="p" style="width: 100%; height: 100%; text-align: center;text-shadow: none;"></p>
+  <script>
+    fetch('https://raw.githubusercontent.com/dwyl/english-words/master/words.txt').then(response=> response.text()).then(text=>{
         
 
-  function e(){
-    setTimeout(function(){
-      var t = document.getElementById("p");
-      text0 = text.split("\n");
-      text1 = text0[Math.floor(Math.random() * text0.length)]
-      t.appendChild(document.createTextNode(text1+" "));
-      e();
-    }, 1)
-  }
-  e();
+    function e(){
+      setTimeout(function(){
+        var t = document.getElementById("p");
+        text0 = text.split("\n");
+        text1 = text0[Math.floor(Math.random() * text0.length)]
+        t.appendChild(document.createTextNode(text1+" "));
+        e();
+      }, 1)
+    }
+    e();
      
-})
-</script>
+    })
+  </script>
+  </body>
 </html>
