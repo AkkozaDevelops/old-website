@@ -4,18 +4,22 @@
 		<title>My webpage</title>
 		<link rel="stylesheet" type="text/css" href="./style/mainStyle.css">
 		<link rel="icon" href="./assets/favicon.jpg">
+		<style>
+      		   .grad {
+                     background-image: linear-gradient(to right, #5a8fe6 , #685ae6);
+      		   }
+    		</style>
 	</head>
-	<body bgcolor="#000000" text="#ffffff">
+	<body class="grad" text="#ffffff">
 		<h1 align="center">what does the fox say</h1>
 		<p align="center"><em>who knows??!?!?!?</em></p>
 		<center>
-		<div position:fixed; left:25px; top:25px>
-			<span><button onclick="window.location = './pagetwo.html'" class="button">Page Two</button></span>
-			<span><button onclick="window.location = './pagethree.html'" class="button">Page Three</button></span>
-			<span><button onclick="window.location = './pagefour.html'" class="button">Page Four</button></span>
-			<span><button onclick="window.location = './pagefive.html'" class="button">Page Five</button></span>
-			<span><button onclick="window.location = './pagesix.html'" class="button">Page Six</button></span>
-		</div>
-		</center>
+		<ul align="center">
+			<button onclick="window.location = './pagetwo.html'" class="button">Page Two</button>
+			<button onclick="window.location = './pagethree.html'" class="button">Page Three</button>
+			<button onclick="window.location = './pagefour.html'" class="button">Page Four</button>
+			<button onclick="window.location = './pagefive.html'" class="button">Page Five</button>
+			<button onclick="window.location = './pagesix.html'" class="button">Page Six</button>
+		</ul>
 	</body>
 </html>
