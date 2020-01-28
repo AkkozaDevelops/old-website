@@ -4,6 +4,7 @@
   <head>
     <title>Jonathan's HTML Testing Site</title> 
     <link rel="icon" type="image/png" href="/60202293.png"/>
+
   </head>
   <style>
     .button {
@@ -15,7 +16,9 @@
       font-size: 16px;
       cursor: pointer;
     }
-
+      		   .grad {
+                     background-image: linear-gradient(to right, #5a8fe6 , #685ae6);
+      		   }
     .button:hover {
       background-color: #ededed;
     }
@@ -40,7 +43,7 @@
       text-align: right;
     }
   </style>
-  <body bgcolor=#000000 text=#ffffff>
+  <body class="grad" text=#ffffff>
   <button onclick="window.location = './index.html'" class="button" position:fixed; left:50px; top:10px>Go back to Main</button>
     <h1 class="arial center">'Lorem ipsum' fan community</h1>
     <hr>
