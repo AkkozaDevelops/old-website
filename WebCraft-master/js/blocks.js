@@ -25,7 +25,7 @@ BLOCK.AIR = {
 // Bedrock
 BLOCK.BEDROCK = {
 	id: 1,
-	spawnable: false,
+	spawnable: true,
 	transparent: false,
 	texture: function( world, lightmap, lit, x, y, z, dir ) { return [ 1/16, 1/16, 2/16, 2/16 ]; }
 };
@@ -283,6 +283,7 @@ BLOCK.pushVertices = function( vertices, world, lightmap, x, y, z )
 			[ x, y + 1.0, z + bH, c[0], c[3], lightMultiplier, lightMultiplier, lightMultiplier, 1.0 ]
 		);
 	}
+
 	
 	// Bottom
 	if ( z == 0 || world.blocks[x][y][z-1].transparent )
