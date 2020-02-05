@@ -109,7 +109,7 @@ function Renderer( id )
 		gl.texParameteri( gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST );
 		gl.texParameteri( gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST );
 	};
-	terrainTexture.image.src = "media/terrain.png";
+	terrainTexture.image.src = "media/terrain2.png";
 	
 	// Create canvas used to draw name tags
 	var textCanvas = this.textCanvas = document.createElement( "canvas" );
